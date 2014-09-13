@@ -13,8 +13,6 @@ import android.widget.Toast;
 
 public class POIActivity extends Activity {
 
-	private Spinner spinnerPoiType;
-	private SpinnerAdapter poiAdapter;
 	private DbAdapter mDbHelper;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +23,7 @@ public class POIActivity extends Activity {
 		
 		mDbHelper = new DbAdapter(this);
 		mDbHelper.getWritableDatabase();
-		
-		spinnerPoiType = (Spinner)findViewById(R.id.spinnerPoiType);
+
 	}
 	
 	public void save(View v){

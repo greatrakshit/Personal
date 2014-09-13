@@ -410,17 +410,13 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f02001f;
     }
     public static final class id {
-        public static final int action_forgot_password=0x7f060021;
-        public static final int action_settings=0x7f060026;
+        public static final int action_forgot_password=0x7f060029;
+        public static final int action_settings=0x7f06002e;
         public static final int book_now=0x7f060010;
-        public static final int buttonCancel=0x7f060020;
-        public static final int buttonSave=0x7f06001f;
         public static final int buyButton=0x7f06000a;
         public static final int buy_now=0x7f06000f;
         public static final int buy_with_google=0x7f06000e;
         public static final int classic=0x7f060011;
-        public static final int editTextDetails=0x7f06001e;
-        public static final int editTextName=0x7f06001d;
         public static final int email=0x7f060017;
         public static final int grayscale=0x7f060012;
         public static final int holo_dark=0x7f060005;
@@ -432,10 +428,10 @@ containing a value of this type.
         public static final int login_status_message=0x7f060015;
         public static final int map=0x7f06001b;
         public static final int match_parent=0x7f06000c;
-        public static final int menu_addPoi=0x7f060022;
-        public static final int menu_logout=0x7f060025;
-        public static final int menu_statistics=0x7f060024;
-        public static final int menu_uploadToServer=0x7f060023;
+        public static final int menu_addPoi=0x7f06002a;
+        public static final int menu_logout=0x7f06002d;
+        public static final int menu_statistics=0x7f06002c;
+        public static final int menu_uploadToServer=0x7f06002b;
         public static final int monochrome=0x7f060013;
         public static final int none=0x7f060000;
         public static final int normal=0x7f060001;
@@ -443,11 +439,23 @@ containing a value of this type.
         public static final int production=0x7f060007;
         public static final int sandbox=0x7f060008;
         public static final int satellite=0x7f060002;
+        public static final int scrollViewPoi=0x7f06001c;
         public static final int selectionDetails=0x7f06000b;
         public static final int sign_in_button=0x7f06001a;
-        public static final int spinnerPoiType=0x7f06001c;
         public static final int strict_sandbox=0x7f060009;
         public static final int terrain=0x7f060003;
+        public static final int textView1=0x7f06001d;
+        public static final int textView10=0x7f060024;
+        public static final int textView11=0x7f060025;
+        public static final int textView12=0x7f060026;
+        public static final int textView2=0x7f060027;
+        public static final int textView3=0x7f060028;
+        public static final int textView4=0x7f06001e;
+        public static final int textView5=0x7f06001f;
+        public static final int textView6=0x7f060020;
+        public static final int textView7=0x7f060021;
+        public static final int textView8=0x7f060022;
+        public static final int textView9=0x7f060023;
         public static final int wrap_content=0x7f06000d;
     }
     public static final class integer {
@@ -465,12 +473,35 @@ containing a value of this type.
         public static final int splash=0x7f0b0002;
     }
     public static final class string {
-        public static final int action_forgot_password=0x7f040036;
+        public static final int action_forgot_password=0x7f040059;
         public static final int action_settings=0x7f040021;
-        public static final int action_sign_in=0x7f040034;
-        public static final int action_sign_in_short=0x7f040035;
+        public static final int action_sign_in=0x7f040057;
+        public static final int action_sign_in_short=0x7f040058;
         public static final int add_poi=0x7f040029;
         public static final int app_name=0x7f040020;
+        public static final int attribute_facilities_address1=0x7f040044;
+        public static final int attribute_facilities_address2=0x7f040045;
+        public static final int attribute_facilities_address3=0x7f040046;
+        public static final int attribute_facilities_address4=0x7f040047;
+        public static final int attribute_facilities_address5=0x7f040048;
+        public static final int attribute_facilities_city=0x7f040049;
+        public static final int attribute_facilities_name=0x7f040042;
+        public static final int attribute_facilities_ownerName=0x7f040043;
+        public static final int attribute_facilities_phone1=0x7f04004c;
+        public static final int attribute_facilities_phone2=0x7f04004d;
+        public static final int attribute_facilities_pincode=0x7f04004b;
+        public static final int attribute_facilities_state=0x7f04004a;
+        public static final int attribute_facilities_type=0x7f040041;
+        public static final int attribute_highwaySegments_contactNumber=0x7f040052;
+        public static final int attribute_highwaySegments_markerType=0x7f04004f;
+        public static final int attribute_highwaySegments_name=0x7f040050;
+        public static final int attribute_highwaySegments_ownerName=0x7f040051;
+        public static final int attribute_highwaySegments_type=0x7f04004e;
+        public static final int attribute_milepost=0x7f040053;
+        public static final int attribute_tollbooth_collectionTarget=0x7f04003f;
+        public static final int attribute_tollbooth_currentCollection=0x7f040040;
+        public static final int attribute_tollbooth_numLanes=0x7f04003e;
+        public static final int attribute_tollbooth_sectionId=0x7f04003d;
         public static final int auth_client_needs_enabling_title=0x7f040001;
         public static final int auth_client_needs_installation_title=0x7f040002;
         public static final int auth_client_needs_update_title=0x7f040003;
@@ -568,24 +599,36 @@ containing a value of this type.
          */
         public static final int common_signin_button_text_long=0x7f04001e;
         public static final int enableGPS=0x7f040023;
-        public static final int error_field_required=0x7f04003b;
-        public static final int error_incorrect_password=0x7f04003a;
-        public static final int error_invalid_email=0x7f040038;
-        public static final int error_invalid_password=0x7f040039;
+        public static final int error_field_required=0x7f04005e;
+        public static final int error_incorrect_password=0x7f04005d;
+        public static final int error_invalid_email=0x7f04005b;
+        public static final int error_invalid_password=0x7f04005c;
         public static final int exit=0x7f040027;
         public static final int hello_world=0x7f040022;
-        public static final int login_progress_signing_in=0x7f040037;
+        public static final int login_progress_signing_in=0x7f04005a;
         public static final int logout=0x7f04002e;
         public static final int name=0x7f04002d;
         public static final int no=0x7f040025;
-        public static final int prompt_password=0x7f040033;
+        public static final int poi_type_facilities=0x7f040032;
+        public static final int poi_type_highwaySegments=0x7f040033;
+        public static final int poi_type_milepost=0x7f040034;
+        public static final int poi_type_tollBooth=0x7f040031;
+        public static final int prompt_password=0x7f040056;
         /**  Strings related to login 
          */
-        public static final int prompt_username=0x7f040032;
+        public static final int prompt_username=0x7f040055;
         public static final int save=0x7f04002b;
         public static final int select_poi=0x7f040026;
         public static final int statistics=0x7f04002f;
-        public static final int title_activity_login=0x7f040031;
+        public static final int subtype_facilities_clinic=0x7f040039;
+        public static final int subtype_facilities_dhaba=0x7f040036;
+        public static final int subtype_facilities_farmerMarket=0x7f04003c;
+        public static final int subtype_facilities_groceryShop=0x7f04003b;
+        public static final int subtype_facilities_hospital=0x7f04003a;
+        public static final int subtype_facilities_policeStation=0x7f040038;
+        public static final int subtype_facilities_restaurant=0x7f040035;
+        public static final int subtype_facilities_vehicleRepairShop=0x7f040037;
+        public static final int title_activity_login=0x7f040054;
         public static final int title_activity_main=0x7f040028;
         public static final int title_activity_poi=0x7f040030;
         public static final int upload=0x7f04002a;

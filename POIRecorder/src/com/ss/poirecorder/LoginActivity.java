@@ -243,7 +243,7 @@ public class LoginActivity extends Activity {
 				return false;
 			}
 			// TODO: register the new account here.
-			return false;
+			return true;
 		}
 
 		@Override
