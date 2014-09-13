@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">POI Recorder</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="enableGPS">POI Recorder needs GPS to be enabled to function properly. Do you want to enable it ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="select_poi">Select Point Of Interest</string>
+    <string name="exit">Exit Application</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="add_poi">Add Point Of Interest</string>
+    <string name="upload">Upload Data</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="logout">Logout</string>
+    <string name="statistics">Statistics</string>
+    <string name="title_activity_poi">POIActivity</string>
+    
+    <string-array name = "poi_list">
+        <item>Petrol Pump</item>
+        <item>Police Station</item>
+        <item>Hospital / Clinic</item>
+        <item>Vehicle Repair Centre / Shop</item>
+        <item>Restaurant / Dhaba</item>
+        <item>Grocery Shop</item>
+        <item>Medicine Shop</item>
+        <item>Bus Stop</item>
+        <item>Hotel</item>
+        <item>Toll Station</item>
+        <item>Market</item>
+    </string-array>
+
+</resources>

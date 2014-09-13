@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_addPoi"
+          android:title="@string/add_poi"
+          android:showAsAction="always" />
+    <item android:id="@+id/menu_uploadToServer" 
+        android:title="@string/upload"
+        android:showAsAction="never"/>
+    <item android:id="@+id/menu_statistics" 
+        android:title="@string/statistics"
+        android:showAsAction="never"/>
+    <item android:id="@+id/menu_logout" 
+        android:title="@string/logout"
+        android:showAsAction="never"/>
+</menu>
