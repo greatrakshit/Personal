@@ -3,23 +3,32 @@ package com.ss.poirecorder;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class POIActivity extends Activity {
+public class PoiActivity extends Activity implements OnClickListener{
 
 	private DbAdapter mDbHelper;
+	TextView textViewFacilities;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setTitle("Add Point Of Interest");
 		setContentView(R.layout.activity_poi);
+		
+		textViewFacilities = (TextView)findViewById(R.id.textViewFacilities);
+		
+		textViewFacilities.setOnClickListener(this);
 		
 		mDbHelper = new DbAdapter(this);
 		mDbHelper.getWritableDatabase();
@@ -51,5 +60,21 @@ public class POIActivity extends Activity {
 			return null;
 		}
 		
+	}
+
+	public void toggleFacilitiesVisibility(){
+		if(((LinearLayout)findViewById(R.id.linearLayoutFacilities)).getVisibility()==View.VISIBLE)
+			((LinearLayout)findViewById(R.id.linearLayoutFacilities)).setVisibility(View.INVISIBLE);
+		else
+			((LinearLayout)findViewById(R.id.linearLayoutFacilities)).setVisibility(View.VISIBLE);
+	}
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch(v.getId()){
+		case R.id.textViewFacilities:
+			toggleFacilitiesVisibility();
+			break;
+		}
 	}
 }

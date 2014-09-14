@@ -1,0 +1,7 @@
+package com.ss.poirecorder;
+
+import android.app.DialogFragment;
+
+public class FacilitiesDialog extends DialogFragment {
+	
+}

@@ -13,14 +13,11 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import android.location.Location;
 import android.os.Bundle;
 import android.app.Activity;
-import android.content.Intent;
-import android.graphics.BitmapFactory;
+import android.app.DialogFragment;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewConfiguration;
-import android.widget.Button;
 
 public class MainActivity extends Activity implements FusedLocationListener.LocationListener{
 
@@ -35,17 +32,6 @@ public class MainActivity extends Activity implements FusedLocationListener.Loca
 		setContentView(R.layout.activity_main);
 		setTitle(getResources().getString(R.string.app_name));
 		map = ((MapFragment)getFragmentManager().findFragmentById(R.id.map)).getMap();
-
-		/* Starting Location Listener to fetch user's location */
-		
-		try {			
-			FS = FusedLocationListener.getInstance(getApplicationContext(), this);
-			FS.start();			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-		/* Location Listener Ends Here */
 		
 		/* View Configuration to force activity to display Overflow Menu 
 		 * Works on the Samsung Galaxy S3 and S4, but not on the LG G2 */
@@ -61,6 +47,37 @@ public class MainActivity extends Activity implements FusedLocationListener.Loca
 	    }
 	    /* View Configuration Ends Here */
 	}
+	
+	
+
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		Log.d(getClass().getSimpleName(), "MainActivity Paused");
+		FS.stop();
+	}
+
+
+
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+
+		/* Starting Location Listener to fetch user's location */
+		
+		try {			
+			FS = FusedLocationListener.getInstance(getApplicationContext(), this);
+			FS.start();			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		/* Location Listener Ends Here */
+	}
+
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -74,7 +91,8 @@ public class MainActivity extends Activity implements FusedLocationListener.Loca
 		// TODO Auto-generated method stub
 		switch(item.getItemId()){
 		case R.id.menu_addPoi:
-			startActivity(new Intent(MainActivity.this, POIActivity.class));
+			//startActivity(new Intent(MainActivity.this, PoiDialog.class));
+			showPoiListDialog();
 			break;
 		case R.id.menu_uploadToServer:
 			break;
@@ -85,12 +103,19 @@ public class MainActivity extends Activity implements FusedLocationListener.Loca
 		return super.onOptionsItemSelected(item);
 	}
 
+	private void showPoiListDialog() {
+		// TODO Auto-generated method stub
+		DialogFragment poiDialog = new PoiDialog();
+		poiDialog.show(getFragmentManager(), "poi");
+	}
+
 	@Override
 	public void onReceiveLocation(Location location) {
 		// TODO Auto-generated method stub
 		
 		/* Location received from FusedLocationListener class
 		 * Shows received location on map */
+		Log.d(getClass().getSimpleName(), "Location Received by MainActivity");
 		googleLatLon = new LatLng(location.getLatitude(), location.getLongitude());
 		map.clear();
 		map.addMarker(new MarkerOptions().position(googleLatLon).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));

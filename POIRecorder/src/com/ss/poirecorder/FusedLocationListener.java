@@ -36,12 +36,16 @@ public class FusedLocationListener implements
 
 	    @Override
 	    public void onConnected(Bundle bundle) {
-	        Log.d(TAG, "Connected");
-	        locationRequest = new LocationRequest();
-	        locationRequest.setSmallestDisplacement(0);
-	        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-	        locationRequest.setInterval(0);
-	        locationClient.requestLocationUpdates(locationRequest, this);
+	    	try{
+		        Log.d(TAG, "Connected");
+		        locationRequest = new LocationRequest();
+		        locationRequest.setSmallestDisplacement(0);
+		        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+		        locationRequest.setInterval(0);
+		        locationClient.requestLocationUpdates(locationRequest, this);
+	    	} catch(Exception e){
+	    		e.printStackTrace();
+	    	}
 
 	    }
 
@@ -93,7 +97,13 @@ public class FusedLocationListener implements
 
 
 	    public void stop() {
-	        locationClient.removeLocationUpdates(this);
+	    	try{
+	    		locationClient.removeLocationUpdates(this);
+	    		Log.d(getClass().getSimpleName(), "FusedLocation Stopped");
+	    	}catch(Exception e){
+	    		e.printStackTrace();
+	    	}
+	        
 	    }
 	
 }

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">POI Recorder</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="enableGPS">POI Recorder needs GPS to be enabled to function properly. Do you want to enable it ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="select_poi">Select Point Of Interest</string>
+    <string name="exit">Exit Application</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="add_poi">Add Point Of Interest</string>
+    <string name="choose_poi">Choose POI Type</string>
+    <string name="choose_facilities">Choose Facility Type</string>
+    <string name="upload">Upload Data</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="logout">Logout</string>
+    <string name="statistics">Statistics</string>
+    <string name="title_activity_poi">POI Recorder</string>
+    <string name="poi_type_tollBooth">Toll Booth</string>
+    <string name="poi_type_facilities">Facilities</string>
+    <string name="poi_type_highwaySegments">Highway Segment</string>
+    <string name="poi_type_milepost">Mile Post</string>
+    <string name="subtype_facilities_restaurant">Restaurant</string>
+    <string name="subtype_facilities_dhaba">Dhaba</string>
+    <string name="subtype_facilities_vehicleRepairShop">Vehicle Repair Shop</string>
+    <string name="subtype_facilities_policeStation">Police Station</string>
+    <string name="subtype_facilities_clinic">Clinic</string>
+    <string name="subtype_facilities_hospital">Hospital</string>
+    <string name="subtype_facilities_groceryShop">Grocery Shop</string>
+    <string name="subtype_facilities_farmerMarket">Farmer Market</string>
+    <string name="attribute_tollbooth_sectionId">Section ID</string>
+    <string name="attribute_tollbooth_numLanes">Number Of Lanes</string>
+    <string name="attribute_tollbooth_collectionTarget">Collection Target</string>
+    <string name="attribute_tollbooth_currentCollection">Current Collection</string>
+    <string name="attribute_facilities_type">Type</string>
+    <string name="attribute_facilities_name">Name</string>
+    <string name="attribute_facilities_ownerName">Owner\'s Name</string>
+    <string name="attribute_facilities_address1">Address 1</string>
+    <string name="attribute_facilities_address2">Address 2</string>
+    <string name="attribute_facilities_address3">Address 3</string>
+    <string name="attribute_facilities_address4">Address 4</string>
+    <string name="attribute_facilities_address5">Address 5</string>
+    <string name="attribute_facilities_city">City</string>
+    <string name="attribute_facilities_state">State</string>
+    <string name="attribute_facilities_pincode">Pincode</string>
+    <string name="attribute_facilities_phone1">Phone 1</string>
+    <string name="attribute_facilities_phone2">Phone 2</string>
+    <string name="attribute_highwaySegments_type">Type</string>
+    <string name="attribute_highwaySegments_markerType">Marker Type</string>
+    <string name="attribute_highwaySegments_name">Name</string>
+    <string name="attribute_highwaySegments_ownerName">Owner Name</string>
+    <string name="attribute_highwaySegments_contactNumber">Contact Number</string>
+    <string name="attribute_milepost">Location</string>
+
+    <string-array name="poi_list">
+        <item>Toll Booth</item>
+        <item>Facilities</item>
+        <item>Highway Segment</item>
+        <item>Mile Post</item>
+    </string-array>
+    <string-array name="facilities_list">
+        <item>Restaurant</item>
+        <item>Dhaba</item>
+        <item>Vehicle Repair Shop</item>
+        <item>Police Station</item>
+        <item>Clinic</item>
+        <item>Hospital</item>
+        <item>Grocery Shop</item>
+        <item>Farmer Market</item>
+    </string-array>
+
+    <string name="title_activity_poi_list">PoiList</string>
+    <string name="title_activity_poi__dialog">Poi_Dialog</string>
+    <string name="title_activity_facilities_dialog">FacilitiesDialog</string>
+
+</resources>

@@ -1,0 +1,14 @@
+package com.ss.poirecorder;
+
+import android.app.ListActivity;
+import android.os.Bundle;
+
+public class PoiList extends ListActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_poi_list);
+		getActionBar().hide();
+	}
+}

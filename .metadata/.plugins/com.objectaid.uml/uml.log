@@ -1,16 +1,313 @@
-2014-09-12 22:25:26.433 [Worker-6] INFO    com.objectaid.uml.model.manage.DiagramManager getFactories: com.objectaid.uml.diagramFactories[ucls]: com.objectaid.uml.cls.model.ClassDiagramFactory@76e7ffed
-2014-09-12 22:25:26.691 [Worker-6] INFO    com.objectaid.uml.model.manage.DiagramManager getFactories: com.objectaid.uml.diagramFactories[useq]: com.objectaid.uml.seq.model.SequenceDiagramFactory@35d834a4
-2014-09-12 22:25:28.133 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.doc.TextLink in [], no license for [com.objectaid.uml.addon]
-2014-09-12 22:25:28.157 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.doc.TextLinkEditPart in [], no license for [com.objectaid.uml.addon]
-2014-09-12 22:25:28.158 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.doc.PTextLink in [], no license for [com.objectaid.uml.addon]
-2014-09-12 22:25:28.160 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.model.diagram.ConnectionEnd in [], no license for [com.objectaid.uml.addon]
-2014-09-12 22:25:28.161 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.model.persistence.PersistedConnectionEnd in [], no license for [com.objectaid.uml.addon]
-2014-09-12 22:25:28.162 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.doc.TextNodeDefinition in [com.objectaid.uml.cls], no license for [com.objectaid.uml.addon]
-2014-09-12 22:25:29.072 [pool-1-thread-1] INFO    com.objectaid.uml.model.manage.LanguageElementManager getLanguageElementFactories: com.objectaid.uml.languageElementFactories: com.objectaid.uml.java.JavaElementFactory
-2014-09-12 22:25:33.005 [pool-1-thread-1] INFO    com.objectaid.uml.util.extend.ExecutableExtensionManager loadExtensions: found com.objectaid.uml.renderFormats="com.objectaid.uml.render.RasterRenderFormat" class="com.objectaid.uml.render.RasterRenderFormat" name="PNG" extension="png" antialias="true" format="5" 
-2014-09-12 22:25:33.009 [pool-1-thread-1] INFO    com.objectaid.uml.util.extend.ExecutableExtensionManager loadExtensions: found com.objectaid.uml.renderFormats="com.objectaid.uml.render.RasterRenderFormat" class="com.objectaid.uml.render.RasterRenderFormat" name="JPEG" extension="jpg" antialias="true" format="4" 
-2014-09-12 22:25:33.011 [pool-1-thread-1] INFO    com.objectaid.uml.util.extend.ExecutableExtensionManager loadExtensions: found com.objectaid.uml.renderFormats="com.objectaid.uml.render.IndexedRasterRenderFormat" class="com.objectaid.uml.render.IndexedRasterRenderFormat" name="GIF" extension="gif" antialias="false" format="2" 
-2014-09-12 22:25:33.012 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.render.SVGRenderFormat in [], no license for [com.objectaid.uml.addon]
-2014-09-12 22:25:33.012 [pool-1-thread-1] INFO    com.objectaid.uml.util.extend.ExecutableExtensionManager loadExtensions: found com.objectaid.uml.renderFormats='com.objectaid.uml.addon.render.SVGRenderFormat' but cannot load class
-2014-09-12 22:25:33.013 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.render.PDFRenderFormat in [], no license for [com.objectaid.uml.addon]
-2014-09-12 22:25:33.016 [pool-1-thread-1] INFO    com.objectaid.uml.util.extend.ExecutableExtensionManager loadExtensions: found com.objectaid.uml.renderFormats='com.objectaid.uml.addon.render.PDFRenderFormat' but cannot load class
+2014-09-14 17:20:02.137 [Worker-4] INFO    com.objectaid.uml.model.manage.DiagramManager getFactories: com.objectaid.uml.diagramFactories[ucls]: com.objectaid.uml.cls.model.ClassDiagramFactory@4dcc7210
+2014-09-14 17:20:02.172 [Worker-4] INFO    com.objectaid.uml.model.manage.DiagramManager getFactories: com.objectaid.uml.diagramFactories[useq]: com.objectaid.uml.seq.model.SequenceDiagramFactory@2d5901d0
+2014-09-14 17:20:02.602 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.doc.TextLink in [], no license for [com.objectaid.uml.addon]
+2014-09-14 17:20:02.659 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.doc.TextLinkEditPart in [], no license for [com.objectaid.uml.addon]
+2014-09-14 17:20:02.660 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.doc.PTextLink in [], no license for [com.objectaid.uml.addon]
+2014-09-14 17:20:02.662 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.model.diagram.ConnectionEnd in [], no license for [com.objectaid.uml.addon]
+2014-09-14 17:20:02.663 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.model.persistence.PersistedConnectionEnd in [], no license for [com.objectaid.uml.addon]
+2014-09-14 17:20:02.664 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.doc.TextNodeDefinition in [com.objectaid.uml.cls], no license for [com.objectaid.uml.addon]
+2014-09-14 17:20:02.978 [pool-1-thread-1] INFO    com.objectaid.uml.model.manage.LanguageElementManager getLanguageElementFactories: com.objectaid.uml.languageElementFactories: com.objectaid.uml.java.JavaElementFactory
+2014-09-14 17:20:03.914 [pool-1-thread-1] INFO    com.objectaid.uml.util.extend.ExecutableExtensionManager loadExtensions: found com.objectaid.uml.renderFormats="com.objectaid.uml.render.RasterRenderFormat" class="com.objectaid.uml.render.RasterRenderFormat" name="PNG" extension="png" antialias="true" format="5" 
+2014-09-14 17:20:03.919 [pool-1-thread-1] INFO    com.objectaid.uml.util.extend.ExecutableExtensionManager loadExtensions: found com.objectaid.uml.renderFormats="com.objectaid.uml.render.RasterRenderFormat" class="com.objectaid.uml.render.RasterRenderFormat" name="JPEG" extension="jpg" antialias="true" format="4" 
+2014-09-14 17:20:03.920 [pool-1-thread-1] INFO    com.objectaid.uml.util.extend.ExecutableExtensionManager loadExtensions: found com.objectaid.uml.renderFormats="com.objectaid.uml.render.IndexedRasterRenderFormat" class="com.objectaid.uml.render.IndexedRasterRenderFormat" name="GIF" extension="gif" antialias="false" format="2" 
+2014-09-14 17:20:03.921 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.render.SVGRenderFormat in [], no license for [com.objectaid.uml.addon]
+2014-09-14 17:20:03.922 [pool-1-thread-1] INFO    com.objectaid.uml.util.extend.ExecutableExtensionManager loadExtensions: found com.objectaid.uml.renderFormats='com.objectaid.uml.addon.render.SVGRenderFormat' but cannot load class
+2014-09-14 17:20:03.923 [pool-1-thread-1] WARNING com.objectaid.uml.util.EclipseHelper loadClass: cannot find com.objectaid.uml.addon.render.PDFRenderFormat in [], no license for [com.objectaid.uml.addon]
+2014-09-14 17:20:03.924 [pool-1-thread-1] INFO    com.objectaid.uml.util.extend.ExecutableExtensionManager loadExtensions: found com.objectaid.uml.renderFormats='com.objectaid.uml.addon.render.PDFRenderFormat' but cannot load class
+2014-09-14 17:20:03.945 [pool-1-thread-1] WARNING com.objectaid.uml.java.JavaRelationshipCandidateFactory createIdentifier: Cannot find type 'com.google.android.gms.location.LocationListener' referenced by '/POIRecorder/com.ss.poirecorder.FusedLocationListener'.
+java.lang.Throwable: Cannot find type 'com.google.android.gms.location.LocationListener' referenced by '/POIRecorder/com.ss.poirecorder.FusedLocationListener'.
+	at com.objectaid.uml.java.JavaRelationshipCandidateFactory.createIdentifier(JavaRelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.java.AssociationCandidateFactory.addCandidates(AssociationCandidateFactory.java:136)
+	at com.objectaid.uml.java.AssociationCandidateFactory.createCandidates(AssociationCandidateFactory.java:77)
+	at com.objectaid.uml.model.impl.RelationshipCandidateFactory.getCandidates(RelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.cls.model.RelationshipFactory.getCandidates(RelationshipFactory.java:245)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.validateEnd(RelationshipDefinition.java:91)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:131)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:32)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:64)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:35)
+	at com.objectaid.uml.model.definition.ModelDefinition.connect(ModelDefinition.java:228)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:75)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedConnection.accept(PersistedConnection.java:39)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:45)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:243)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:206)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:155)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:83)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+2014-09-14 17:20:03.950 [pool-1-thread-1] WARNING com.objectaid.uml.java.JavaRelationshipCandidateFactory createIdentifier: Cannot find type 'String' referenced by '/POIRecorder/com.ss.poirecorder.FusedLocationListener'.
+java.lang.Throwable: Cannot find type 'String' referenced by '/POIRecorder/com.ss.poirecorder.FusedLocationListener'.
+	at com.objectaid.uml.java.JavaRelationshipCandidateFactory.createIdentifier(JavaRelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.java.AssociationCandidateFactory.addCandidates(AssociationCandidateFactory.java:136)
+	at com.objectaid.uml.java.AssociationCandidateFactory.createCandidates(AssociationCandidateFactory.java:77)
+	at com.objectaid.uml.model.impl.RelationshipCandidateFactory.getCandidates(RelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.cls.model.RelationshipFactory.getCandidates(RelationshipFactory.java:245)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.validateEnd(RelationshipDefinition.java:91)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:131)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:32)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:64)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:35)
+	at com.objectaid.uml.model.definition.ModelDefinition.connect(ModelDefinition.java:228)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:75)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedConnection.accept(PersistedConnection.java:39)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:45)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:243)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:206)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:155)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:83)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+2014-09-14 17:20:03.952 [pool-1-thread-1] WARNING com.objectaid.uml.java.JavaRelationshipCandidateFactory createIdentifier: Cannot find type 'com.google.android.gms.location.LocationClient' referenced by '/POIRecorder/com.ss.poirecorder.FusedLocationListener'.
+java.lang.Throwable: Cannot find type 'com.google.android.gms.location.LocationClient' referenced by '/POIRecorder/com.ss.poirecorder.FusedLocationListener'.
+	at com.objectaid.uml.java.JavaRelationshipCandidateFactory.createIdentifier(JavaRelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.java.AssociationCandidateFactory.addCandidates(AssociationCandidateFactory.java:136)
+	at com.objectaid.uml.java.AssociationCandidateFactory.createCandidates(AssociationCandidateFactory.java:77)
+	at com.objectaid.uml.model.impl.RelationshipCandidateFactory.getCandidates(RelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.cls.model.RelationshipFactory.getCandidates(RelationshipFactory.java:245)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.validateEnd(RelationshipDefinition.java:91)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:131)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:32)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:64)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:35)
+	at com.objectaid.uml.model.definition.ModelDefinition.connect(ModelDefinition.java:228)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:75)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedConnection.accept(PersistedConnection.java:39)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:45)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:243)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:206)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:155)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:83)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+2014-09-14 17:20:03.954 [pool-1-thread-1] WARNING com.objectaid.uml.java.JavaRelationshipCandidateFactory createIdentifier: Cannot find type 'com.google.android.gms.location.LocationRequest' referenced by '/POIRecorder/com.ss.poirecorder.FusedLocationListener'.
+java.lang.Throwable: Cannot find type 'com.google.android.gms.location.LocationRequest' referenced by '/POIRecorder/com.ss.poirecorder.FusedLocationListener'.
+	at com.objectaid.uml.java.JavaRelationshipCandidateFactory.createIdentifier(JavaRelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.java.AssociationCandidateFactory.addCandidates(AssociationCandidateFactory.java:136)
+	at com.objectaid.uml.java.AssociationCandidateFactory.createCandidates(AssociationCandidateFactory.java:77)
+	at com.objectaid.uml.model.impl.RelationshipCandidateFactory.getCandidates(RelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.cls.model.RelationshipFactory.getCandidates(RelationshipFactory.java:245)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.validateEnd(RelationshipDefinition.java:91)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:131)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:32)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:64)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:35)
+	at com.objectaid.uml.model.definition.ModelDefinition.connect(ModelDefinition.java:228)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:75)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedConnection.accept(PersistedConnection.java:39)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:45)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:243)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:206)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:155)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:83)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+2014-09-14 17:20:03.956 [pool-1-thread-1] WARNING com.objectaid.uml.java.JavaRelationshipCandidateFactory createIdentifier: Cannot find type 'android.content.Context' referenced by '/POIRecorder/com.ss.poirecorder.FusedLocationListener'.
+java.lang.Throwable: Cannot find type 'android.content.Context' referenced by '/POIRecorder/com.ss.poirecorder.FusedLocationListener'.
+	at com.objectaid.uml.java.JavaRelationshipCandidateFactory.createIdentifier(JavaRelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.java.AssociationCandidateFactory.addCandidates(AssociationCandidateFactory.java:136)
+	at com.objectaid.uml.java.AssociationCandidateFactory.createCandidates(AssociationCandidateFactory.java:77)
+	at com.objectaid.uml.model.impl.RelationshipCandidateFactory.getCandidates(RelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.cls.model.RelationshipFactory.getCandidates(RelationshipFactory.java:245)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.validateEnd(RelationshipDefinition.java:91)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:131)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:32)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:64)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:35)
+	at com.objectaid.uml.model.definition.ModelDefinition.connect(ModelDefinition.java:228)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:75)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedConnection.accept(PersistedConnection.java:39)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:45)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:243)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:206)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:155)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:83)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+2014-09-14 17:20:03.966 [pool-1-thread-1] WARNING com.objectaid.uml.java.JavaRelationshipCandidateFactory createIdentifier: Cannot find type 'android.widget.TextView' referenced by '/POIRecorder/com.ss.poirecorder.POIActivity'.
+java.lang.Throwable: Cannot find type 'android.widget.TextView' referenced by '/POIRecorder/com.ss.poirecorder.POIActivity'.
+	at com.objectaid.uml.java.JavaRelationshipCandidateFactory.createIdentifier(JavaRelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.java.AssociationCandidateFactory.addCandidates(AssociationCandidateFactory.java:136)
+	at com.objectaid.uml.java.AssociationCandidateFactory.createCandidates(AssociationCandidateFactory.java:77)
+	at com.objectaid.uml.model.impl.RelationshipCandidateFactory.getCandidates(RelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.cls.model.RelationshipFactory.getCandidates(RelationshipFactory.java:245)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.validateEnd(RelationshipDefinition.java:91)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:131)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:32)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:64)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:35)
+	at com.objectaid.uml.model.definition.ModelDefinition.connect(ModelDefinition.java:228)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:75)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedConnection.accept(PersistedConnection.java:39)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:45)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:243)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:206)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:155)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:83)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+2014-09-14 17:20:03.967 [pool-1-thread-1] WARNING com.objectaid.uml.java.JavaRelationshipCandidateFactory createIdentifier: Cannot find type 'com.google.android.gms.maps.GoogleMap' referenced by '/POIRecorder/com.ss.poirecorder.MainActivity'.
+java.lang.Throwable: Cannot find type 'com.google.android.gms.maps.GoogleMap' referenced by '/POIRecorder/com.ss.poirecorder.MainActivity'.
+	at com.objectaid.uml.java.JavaRelationshipCandidateFactory.createIdentifier(JavaRelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.java.AssociationCandidateFactory.addCandidates(AssociationCandidateFactory.java:136)
+	at com.objectaid.uml.java.AssociationCandidateFactory.createCandidates(AssociationCandidateFactory.java:77)
+	at com.objectaid.uml.model.impl.RelationshipCandidateFactory.getCandidates(RelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.cls.model.RelationshipFactory.getCandidates(RelationshipFactory.java:245)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.validateEnd(RelationshipDefinition.java:91)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:131)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:32)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:64)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:35)
+	at com.objectaid.uml.model.definition.ModelDefinition.connect(ModelDefinition.java:228)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:75)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedConnection.accept(PersistedConnection.java:39)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:45)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:243)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:206)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:155)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:83)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+2014-09-14 17:20:03.969 [pool-1-thread-1] WARNING com.objectaid.uml.java.JavaRelationshipCandidateFactory createIdentifier: Cannot find type 'com.google.android.gms.maps.model.LatLng' referenced by '/POIRecorder/com.ss.poirecorder.MainActivity'.
+java.lang.Throwable: Cannot find type 'com.google.android.gms.maps.model.LatLng' referenced by '/POIRecorder/com.ss.poirecorder.MainActivity'.
+	at com.objectaid.uml.java.JavaRelationshipCandidateFactory.createIdentifier(JavaRelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.java.AssociationCandidateFactory.addCandidates(AssociationCandidateFactory.java:136)
+	at com.objectaid.uml.java.AssociationCandidateFactory.createCandidates(AssociationCandidateFactory.java:77)
+	at com.objectaid.uml.model.impl.RelationshipCandidateFactory.getCandidates(RelationshipCandidateFactory.java:54)
+	at com.objectaid.uml.cls.model.RelationshipFactory.getCandidates(RelationshipFactory.java:245)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.validateEnd(RelationshipDefinition.java:91)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:131)
+	at com.objectaid.uml.cls.model.definition.AssociationDefinition.validateEnd(AssociationDefinition.java:32)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:64)
+	at com.objectaid.uml.cls.model.definition.RelationshipDefinition.doConnect(RelationshipDefinition.java:35)
+	at com.objectaid.uml.model.definition.ModelDefinition.connect(ModelDefinition.java:228)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:75)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedConnection.accept(PersistedConnection.java:39)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:45)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:243)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:206)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:155)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:83)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+2014-09-14 17:20:04.244 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for java.lang.reflect.Field
+2014-09-14 17:20:04.245 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for com.google.android.gms.maps.CameraUpdate
+2014-09-14 17:20:04.246 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for com.google.android.gms.maps.CameraUpdateFactory
+2014-09-14 17:20:04.247 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for com.google.android.gms.maps.GoogleMap
+2014-09-14 17:20:04.247 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for com.google.android.gms.maps.MapFragment
+2014-09-14 17:20:04.248 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for com.google.android.gms.maps.model.BitmapDescriptorFactory
+2014-09-14 17:20:04.249 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for com.google.android.gms.maps.model.LatLng
+2014-09-14 17:20:04.250 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for com.google.android.gms.maps.model.MarkerOptions
+2014-09-14 17:20:04.250 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.location.Location
+2014-09-14 17:20:04.251 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.os.Bundle
+2014-09-14 17:20:04.252 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.app.Activity
+2014-09-14 17:20:04.253 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.content.Intent
+2014-09-14 17:20:04.254 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.graphics.BitmapFactory
+2014-09-14 17:20:04.254 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.view.Menu
+2014-09-14 17:20:04.255 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.view.MenuItem
+2014-09-14 17:20:04.256 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.view.View
+2014-09-14 17:20:04.257 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.view.View.OnClickListener
+2014-09-14 17:20:04.258 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.view.ViewConfiguration
+2014-09-14 17:20:04.258 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.widget.Button
+2014-09-14 17:20:04.261 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for setContentView(R.layout.activity_main)
+2014-09-14 17:20:04.262 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for setTitle(getResources().getString(R.string.app_name))
+2014-09-14 17:20:04.263 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for getResources().getString(R.string.app_name)
+2014-09-14 17:20:04.263 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for getResources()
+2014-09-14 17:20:04.265 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for ((MapFragment)getFragmentManager().findFragmentById(R.id.map)).getMap()
+2014-09-14 17:20:04.266 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for getFragmentManager().findFragmentById(R.id.map)
+2014-09-14 17:20:04.266 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for getFragmentManager()
+2014-09-14 17:20:04.268 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for FusedLocationListener.getInstance(getApplicationContext(),this)
+2014-09-14 17:20:04.269 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for getApplicationContext()
+2014-09-14 17:20:04.270 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for e.printStackTrace()
+2014-09-14 17:20:04.271 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for ViewConfiguration.get(this)
+2014-09-14 17:20:04.271 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey")
+2014-09-14 17:20:04.272 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for menuKeyField.setAccessible(true)
+2014-09-14 17:20:04.273 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for menuKeyField.setBoolean(config,false)
+2014-09-14 17:20:04.274 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for ex.printStackTrace()
+2014-09-14 17:20:04.275 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for getMenuInflater().inflate(R.menu.main,menu)
+2014-09-14 17:20:04.276 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for getMenuInflater()
+2014-09-14 17:20:04.277 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for item.getItemId()
+2014-09-14 17:20:04.278 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for startActivity(new Intent(MainActivity.this,PoiList.class))
+2014-09-14 17:20:04.280 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for finish()
+2014-09-14 17:20:04.281 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for location.getLatitude()
+2014-09-14 17:20:04.281 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for location.getLongitude()
+2014-09-14 17:20:04.282 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for map.clear()
+2014-09-14 17:20:04.283 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for map.addMarker(new MarkerOptions().position(googleLatLon).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)))
+2014-09-14 17:20:04.284 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for new MarkerOptions().position(googleLatLon).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
+2014-09-14 17:20:04.285 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for new MarkerOptions().position(googleLatLon)
+2014-09-14 17:20:04.286 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)
+2014-09-14 17:20:04.286 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for CameraUpdateFactory.newLatLngZoom(googleLatLon,10)
+2014-09-14 17:20:04.287 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for map.animateCamera(yourLocation)
+2014-09-14 17:20:04.330 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.app.Activity
+2014-09-14 17:20:04.331 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.os.AsyncTask
+2014-09-14 17:20:04.332 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.os.Bundle
+2014-09-14 17:20:04.333 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.util.Log
+2014-09-14 17:20:04.334 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.view.Menu
+2014-09-14 17:20:04.334 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.view.MenuItem
+2014-09-14 17:20:04.335 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.view.View
+2014-09-14 17:20:04.336 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.view.View.OnClickListener
+2014-09-14 17:20:04.336 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.view.Window
+2014-09-14 17:20:04.337 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.widget.LinearLayout
+2014-09-14 17:20:04.338 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.widget.Spinner
+2014-09-14 17:20:04.338 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.widget.SpinnerAdapter
+2014-09-14 17:20:04.339 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.widget.TextView
+2014-09-14 17:20:04.340 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: QualifiedName.resolveTypeBinding() failed for android.widget.Toast
+2014-09-14 17:20:04.341 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for setTitle("Add Point Of Interest")
+2014-09-14 17:20:04.342 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for setContentView(R.layout.activity_poi)
+2014-09-14 17:20:04.343 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for findViewById(R.id.textViewFacilities)
+2014-09-14 17:20:04.344 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for textViewFacilities.setOnClickListener(this)
+2014-09-14 17:20:04.346 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for mDbHelper.getWritableDatabase()
+2014-09-14 17:20:04.347 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for Toast.makeText(getApplicationContext(),"POI Saved",Toast.LENGTH_LONG).show()
+2014-09-14 17:20:04.347 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for Toast.makeText(getApplicationContext(),"POI Saved",Toast.LENGTH_LONG)
+2014-09-14 17:20:04.348 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for getApplicationContext()
+2014-09-14 17:20:04.349 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for finish()
+2014-09-14 17:20:04.350 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for finish()
+2014-09-14 17:20:04.350 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for mDbHelper.insertPoiRecord(records)
+2014-09-14 17:20:04.351 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for new UploadPoiRecords().execute()
+2014-09-14 17:20:04.352 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for ((LinearLayout)findViewById(R.id.linearLayoutFacilities)).getVisibility()
+2014-09-14 17:20:04.353 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for findViewById(R.id.linearLayoutFacilities)
+2014-09-14 17:20:04.354 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for ((LinearLayout)findViewById(R.id.linearLayoutFacilities)).setVisibility(View.INVISIBLE)
+2014-09-14 17:20:04.355 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for findViewById(R.id.linearLayoutFacilities)
+2014-09-14 17:20:04.356 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for ((LinearLayout)findViewById(R.id.linearLayoutFacilities)).setVisibility(View.VISIBLE)
+2014-09-14 17:20:04.357 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for findViewById(R.id.linearLayoutFacilities)
+2014-09-14 17:20:04.358 [pool-1-thread-1] WARNING com.objectaid.uml.java.ClassifierDependencyCandidateFactory$DependencyVisitor visit: MethodInvocation.resolveMethodBinding() failed for v.getId()

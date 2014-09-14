@@ -1,0 +1,80 @@
+package com.ss.poirecorder;
+
+import android.app.Activity;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.Window;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class POIActivity extends Activity implements OnClickListener{
+
+	private DbAdapter mDbHelper;
+	TextView textViewFacilities;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		//requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setTitle("Add Point Of Interest");
+		setContentView(R.layout.activity_poi);
+		
+		textViewFacilities = (TextView)findViewById(R.id.textViewFacilities);
+		
+		textViewFacilities.setOnClickListener(this);
+		
+		mDbHelper = new DbAdapter(this);
+		mDbHelper.getWritableDatabase();
+
+	}
+	
+	public void save(View v){
+		Toast.makeText(getApplicationContext(), "POI Saved", Toast.LENGTH_LONG).show();
+		finish();
+	}
+	
+	public void close(View v){
+		finish();
+	}
+	
+	private void savePoiRecord(String records){
+		mDbHelper.insertPoiRecord(records);
+	}
+	
+	public void uploadToServer(View v){
+		new UploadPoiRecords().execute();
+	}
+	
+	public class UploadPoiRecords extends AsyncTask<Void, Void, Void>{
+
+		@Override
+		protected Void doInBackground(Void... params) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+	}
+
+	public void toggleFacilitiesVisibility(){
+		if(((LinearLayout)findViewById(R.id.linearLayoutFacilities)).getVisibility()==View.VISIBLE)
+			((LinearLayout)findViewById(R.id.linearLayoutFacilities)).setVisibility(View.INVISIBLE);
+		else
+			((LinearLayout)findViewById(R.id.linearLayoutFacilities)).setVisibility(View.VISIBLE);
+	}
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch(v.getId()){
+		case R.id.textViewFacilities:
+			toggleFacilitiesVisibility()
+			break;
+		}
+	}
+}
