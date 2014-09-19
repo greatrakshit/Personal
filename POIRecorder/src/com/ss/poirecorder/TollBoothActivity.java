@@ -1,6 +1,5 @@
 package com.ss.poirecorder;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -11,9 +10,34 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 
-public class TollBoothActivity extends Activity implements FusedLocationListener.LocationListener{
+public class TollBoothActivity extends DialogFragment implements FusedLocationListener.LocationListener{
 	private FusedLocationListener FS;
 
+	@Override
+	public Dialog onCreateDialog(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		
+		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+		
+		LayoutInflater inflater = getActivity().getLayoutInflater();
+		
+		builder.setView(inflater.inflate(R.layout.activity_toll_booth, null)).setPositiveButton(R.string.save, new OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				
+			}
+		}).setNegativeButton(R.string.cancel, new OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				getDialog().cancel();
+			}
+		});
+		return builder.create();
+	}
 
 	@Override
 	public void onReceiveLocation(Location location) {
@@ -36,7 +60,7 @@ public class TollBoothActivity extends Activity implements FusedLocationListener
 		/* Starting Location Listener to fetch user's location */
 		
 		try {			
-			FS = FusedLocationListener.getInstance(getApplicationContext(), this);
+			FS = FusedLocationListener.getInstance(getActivity(), this);
 			FS.start();			
 		} catch (Exception e) {
 			e.printStackTrace();
