@@ -78,6 +78,14 @@
         <item>Restaurant</item>
         <item>Vehicle Repair Shop</item>
     </string-array>
+    
+    <string-array name="highway_segment_types">
+        <item>Bridge</item>
+        <item>Police Jurisdiction</item>
+        <item>New Construction</item>
+        <item>Highway Mnt</item>
+        <item>Populated Area</item>
+    </string-array>
 
     <string name="title_activity_poi_list">Choose POI Type</string>
     <string name="title_activity_poi__dialog">Poi_Dialog</string>

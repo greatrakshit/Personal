@@ -36,6 +36,8 @@ public class PoiDialog extends DialogFragment {
 					facilitiesDialog.show(getFragmentManager(), "facilities");
 					break;
 				case highway_segments:
+					Intent highwaySegment = new Intent(getActivity(), HighwaySegmentForm.class);
+					startActivity(highwaySegment);
 					break;
 				case milepost:
 					break;

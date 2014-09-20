@@ -69,7 +69,8 @@
         </activity>
         <activity
             android:name=".HighwaySegmentForm"
-            android:label="@string/title_activity_highway_segment" >
+            android:label="@string/title_activity_highway_segment"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"  >
         </activity>
         <activity
             android:name=".MilepostForm"
