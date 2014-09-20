@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.os.Bundle;
 
 public class PoiDialog extends DialogFragment {
@@ -27,8 +28,8 @@ public class PoiDialog extends DialogFragment {
 				// TODO Auto-generated method stub
 				switch(which){
 				case toll_booth:
-					DialogFragment tollBoothDialog = new TollBoothActivity();
-					tollBoothDialog.show(getFragmentManager(), "tollBooth");
+					Intent tollBooth = new Intent(getActivity(), TollBoothForm.class);
+					startActivity(tollBooth);
 					break;
 				case facilities:
 					DialogFragment facilitiesDialog = new FacilitiesDialog();

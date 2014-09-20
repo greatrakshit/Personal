@@ -56,9 +56,11 @@
     <string name="attribute_highwaySegments_ownerName">Owner Name</string>
     <string name="attribute_highwaySegments_contactNumber">Contact Number</string>
     <string name="attribute_milepost">Location</string>
-    
     <string name="present_latitude">Present Latitude</string>
     <string name="present_longitude">Present Longitude</string>
+    <string name="current_location">Current Location</string>
+    <string name="waiting_for_location">Waiting For Location</string>
+    <string name="degree">&#176;</string>
 
     <string-array name="poi_list">
         <item>Facilities</item>
@@ -77,12 +79,13 @@
         <item>Vehicle Repair Shop</item>
     </string-array>
 
-    <string name="title_activity_poi_list">PoiList</string>
+    <string name="title_activity_poi_list">Choose POI Type</string>
     <string name="title_activity_poi__dialog">Poi_Dialog</string>
-    <string name="title_activity_facilities_dialog">FacilitiesDialog</string>
-    <string name="title_activity_toll_booth">TollBoothActivity</string>
-    <string name="title_activity_facility">FacilityActivity</string>
-    <string name="title_activity_highway_segment">HighwaySegmentActivity</string>
-    <string name="title_activity_milepost">MilepostActivity</string>
+    <string name="title_activity_facilities_dialog">Choose Facility Type</string>
+    <string name="title_activity_toll_booth">Add TollBooth</string>
+    <string name="title_activity_facility">Add Facility</string>
+    <string name="title_activity_highway_segment">Add HighwaySegment</string>
+    <string name="title_activity_milepost">Add Milepost</string>
+    <string name="title_activity_facilities">Facilities</string>
 
 </resources>

@@ -25,12 +25,16 @@ public class MainActivity extends Activity implements FusedLocationListener.Loca
 	private static LatLng googleLatLon;
 	private FusedLocationListener FS;
 	private boolean zoomIsInitialized = false;
+	private static String TAG;
 	//private Button buttonAddPOI;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		setTitle(getResources().getString(R.string.app_name));
+		
+		TAG = getClass().getSimpleName();
+		
 		map = ((MapFragment)getFragmentManager().findFragmentById(R.id.map)).getMap();
 		
 		/* View Configuration to force activity to display Overflow Menu 
@@ -54,8 +58,9 @@ public class MainActivity extends Activity implements FusedLocationListener.Loca
 	protected void onPause() {
 		// TODO Auto-generated method stub
 		super.onPause();
-		Log.d(getClass().getSimpleName(), "MainActivity Paused");
+		Log.d(TAG, "MainActivity Paused");
 		FS.stop();
+		FS = null;
 	}
 
 
@@ -64,7 +69,7 @@ public class MainActivity extends Activity implements FusedLocationListener.Loca
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
-
+		Log.d(TAG, "MainActivity Resumed");
 		/* Starting Location Listener to fetch user's location */
 		
 		try {			
@@ -130,7 +135,6 @@ public class MainActivity extends Activity implements FusedLocationListener.Loca
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		FS.stop();
 	}	
 	
 	

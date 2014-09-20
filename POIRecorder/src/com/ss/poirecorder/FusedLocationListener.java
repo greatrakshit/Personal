@@ -63,9 +63,9 @@ public class FusedLocationListener implements
 	    private static FusedLocationListener instance;
 
 	    public static synchronized FusedLocationListener getInstance(Context context, LocationListener listener){
-	        if (null==instance) {
-	            instance = new FusedLocationListener(context, listener);
-	        }
+	        // if (null==instance) {
+	        instance = new FusedLocationListener(context, listener);
+	        //}
 	        return instance;
 	    }
 
@@ -99,6 +99,7 @@ public class FusedLocationListener implements
 	    public void stop() {
 	    	try{
 	    		locationClient.removeLocationUpdates(this);
+	    		locationClient.disconnect();
 	    		Log.d(getClass().getSimpleName(), "FusedLocation Stopped");
 	    	}catch(Exception e){
 	    		e.printStackTrace();
