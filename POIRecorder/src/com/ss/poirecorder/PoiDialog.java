@@ -28,7 +28,7 @@ public class PoiDialog extends DialogFragment {
 				// TODO Auto-generated method stub
 				switch(which){
 				case toll_booth:
-					Intent tollBooth = new Intent(getActivity(), TollBoothForm.class);
+					Intent tollBooth = new Intent(getActivity(), FormTollBooth.class);
 					startActivity(tollBooth);
 					break;
 				case facilities:
@@ -36,7 +36,7 @@ public class PoiDialog extends DialogFragment {
 					facilitiesDialog.show(getFragmentManager(), "facilities");
 					break;
 				case highway_segments:
-					Intent highwaySegment = new Intent(getActivity(), HighwaySegmentForm.class);
+					Intent highwaySegment = new Intent(getActivity(), FormHighwaySegment.class);
 					startActivity(highwaySegment);
 					break;
 				case milepost:

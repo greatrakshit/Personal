@@ -5,11 +5,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MilepostForm extends Activity {
+public class FormHighwaySegment extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_milepost);
+		setContentView(R.layout.activity_highway_segment);
 	}
 }

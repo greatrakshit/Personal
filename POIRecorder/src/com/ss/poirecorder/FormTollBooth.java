@@ -9,7 +9,7 @@ import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class TollBoothForm extends Activity implements FusedLocationListener.LocationListener{
+public class FormTollBooth extends Activity implements FusedLocationListener.LocationListener{
 	
 	private FusedLocationListener FS;
 	private static boolean LOCATION_SET = false;

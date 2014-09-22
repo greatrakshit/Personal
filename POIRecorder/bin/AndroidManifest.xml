@@ -59,7 +59,7 @@
             android:label="@string/title_activity_facilities_dialog" >
         </activity>
         <activity
-            android:name=".TollBoothForm"
+            android:name=".FormTollBooth"
             android:label="@string/title_activity_toll_booth"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" >
         </activity>
@@ -68,12 +68,12 @@
             android:label="@string/title_activity_facility" >
         </activity>
         <activity
-            android:name=".HighwaySegmentForm"
+            android:name=".FormHighwaySegment"
             android:label="@string/title_activity_highway_segment"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"  >
         </activity>
         <activity
-            android:name=".MilepostForm"
+            android:name=".FormMilepost"
             android:label="@string/title_activity_milepost" >
         </activity>
         <activity
