@@ -77,7 +77,7 @@
             android:label="@string/title_activity_milepost" >
         </activity>
         <activity
-            android:name=".FacilityForm"
+            android:name=".FormFacility"
             android:label="@string/title_activity_facilities" >
         </activity>
     </application>

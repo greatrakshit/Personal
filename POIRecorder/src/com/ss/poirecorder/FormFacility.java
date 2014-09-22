@@ -7,7 +7,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 
-public class FacilityForm extends DialogFragment {
+public class FormFacility extends DialogFragment {
 
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class FacilityForm extends DialogFragment {
 	           })
 	           .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
 	               public void onClick(DialogInterface dialog, int id) {
-	                   FacilityForm.this.getDialog().cancel();
+	                   FormFacility.this.getDialog().cancel();
 	               }
 	           });      
 	    return builder.create();
