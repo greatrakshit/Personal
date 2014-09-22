@@ -45,7 +45,6 @@ public class PoiActivity extends Activity implements OnClickListener{
 	}
 	
 	private void savePoiRecord(String records){
-		mDbHelper.insertPoiRecord(records);
 	}
 	
 	public void uploadToServer(View v){
