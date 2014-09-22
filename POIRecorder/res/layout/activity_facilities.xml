@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/editTextType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_type" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextOwnerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_ownerName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextAddress1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_address1"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/editTextAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_address2"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/editTextAddress3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_address3"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/editTextAddress4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_address4"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/editTextAddress5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_address5"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_city" />
+
+    <EditText
+        android:id="@+id/editTextState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_state" />
+
+    <EditText
+        android:id="@+id/editTextPincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_pincode"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextPhone1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_phone1"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editTextPhone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/attribute_facilities_phone2"
+        android:inputType="phone" />
+
+</LinearLayout>
+</ScrollView>
