@@ -1,71 +1,65 @@
 package com.ss.poirecorder;
 
-import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
+import android.content.DialogInterface;
 import android.location.Location;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class FormTollBooth extends Activity implements FusedLocationListener.LocationListener{
+public class FormTollBooth extends DialogFragment implements FusedLocationListener.LocationListener{
 	
 	private FusedLocationListener FS;
 	private static boolean LOCATION_SET = false;
 	EditText editTextCollectionTarget, editTextCurrentCollection;
-	
+
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public Dialog onCreateDialog(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_toll_booth);
-		
-		editTextCollectionTarget = (EditText) findViewById(R.id.editTextCollectionTarget);
-		editTextCurrentCollection = (EditText) findViewById(R.id.editTextCurrentCollection);
-		
-		editTextCollectionTarget.addTextChangedListener(new TextWatcher() {
-			
-			@Override
-			public void onTextChanged(CharSequence s, int start, int before, int count) {
-				// TODO Auto-generated method stub
+	    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+	    // Get the layout inflater
+	    LayoutInflater inflater = getActivity().getLayoutInflater();
 
-			}
-			
-			@Override
-			public void beforeTextChanged(CharSequence s, int start, int count,
-					int after) {
-				// TODO Auto-generated method stub
-				
-			}
-			
-			@Override
-			public void afterTextChanged(Editable s) {
-				// TODO Auto-generated method stub
-				if(s.length()>0)
-					s = s.insert(0, "Rs. ");				
-			}
-		});
+	    // Inflate and set the layout for the dialog
+	    // Pass null as the parent view because its going in the dialog layout
+	    builder.setView(inflater.inflate(R.layout.activity_toll_booth, null))
+	    // Add action buttons
+	           .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+	               @Override
+	               public void onClick(DialogInterface dialog, int id) {
+	                   // sign in the user ...
+	               }
+	           })
+	           .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+	               public void onClick(DialogInterface dialog, int id) {
+	            	   FormTollBooth.this.getDialog().cancel();
+	               }
+	           });      
+	    return builder.create();
 	}
-
-
+	
 	@Override
 	public void onReceiveLocation(Location location) {
 		// TODO Auto-generated method stub
-		((TextView)findViewById(R.id.textViewDisplayCurrentLocation)).setText(String.valueOf(location.getLatitude())+getResources().getString(R.string.degree)+" N"+
+		((TextView) getActivity().findViewById(R.id.textViewDisplayCurrentLocation)).setText(String.valueOf(location.getLatitude())+getResources().getString(R.string.degree)+" N"+
 				" "+String.valueOf(location.getLongitude())+getResources().getString(R.string.degree)+" E");
 		LOCATION_SET = true;
 	}	
 	
+	
 	@Override
-	protected void onResume() {
+	public void onStart() {
 		// TODO Auto-generated method stub
-		super.onResume();
-
+		super.onStart();
+		Log.d(getClass().getSimpleName(), "TollboothActivity onStart");
 		/* Starting Location Listener to fetch user's location */
 		
 		try {			
-			FS = FusedLocationListener.getInstance(getApplicationContext(), this);
+			FS = FusedLocationListener.getInstance(getActivity(), this);
 			FS.start();			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -73,13 +67,14 @@ public class FormTollBooth extends Activity implements FusedLocationListener.Loc
 		
 		/* Location Listener Ends Here */
 	}
-	
+
 	@Override
-	protected void onPause() {
+	public void onStop() {
 		// TODO Auto-generated method stub
-		super.onPause();
+		super.onStop();
 		LOCATION_SET = false;
-		Log.d(getClass().getSimpleName(), "TollboothActivity Paused");
+		Log.d(getClass().getSimpleName(), "TollboothActivity onStop");
 		FS.stop();
 	}
+
 }
